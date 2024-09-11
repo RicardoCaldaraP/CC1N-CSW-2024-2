@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aula-10</title>
+    </head>
+
+    <body>
+        <h1>4 FERRAMENTAS TI UTILIZADAS NA BIBLIOTECA ANA BOVE</h1>
+        <br>
+        <h2>4.1 Sobre a Biblioteca Ana Bove e sua instituição mantenedora</h2>
+        <h3>4.1.1 O Imip</h3>
+        <h3>4.1.2 A Biblioteca Ana Bove</h3>
+        <br>
+        <h2>4.2 Diagnóstico tecnológico da Biblioteca Ana Bove</h2>
+        <h3>4.2.1 Catálogo Automático</h3>
+        <h3>4.2.2 Repositório isntitucional</h3>
+        <h3>4.2.3 Portal e/ou base de dados de informação científica</h3>
+        <h4>4.2.4 Website (site)</h3>
+        <h5>4.2.5 Redes sociais</h3>
+        <h6>4.2.6 Outras ferramentas</h3>
+        <br>
+        <h1>5 CONCLUSÕES</h1>
+        <br>
+        <h1>6 REFERENCIAS</h1>
+
+        <hr>
+
+        <p>O professor Fabrício é um cara legal, ele nasceu <u>R. José Duque,
+                185 - Mantena, MG, 3529-000</u> no
+            hospital Evangélico, e ainda criança veio morar na <u>rua Santa
+                Luzia, 323-Serra, ES</u>.</p>
+
+        <p>O professor Fabrício é um cara legal, ele nasceu
+            <address>R. José Duque, 185 - Mantena, MG, 3529-000</address> no
+            hospital Evangélico, e ainda criança
+            veio morar na <address>rua Santa Luzia, 323-Serra, ES</address>.</p>
+        <hr>
+
+        <pre><code>
+            import random
+            import string
+
+            def gerar_senha(tamanho=12):
+            caracteres = string.ascii_letters + string.digits +
+            string.punctuation
+            senha = ''.join(random.choice(caracteres) for _ in range(tamanho))
+            return senha
+
+            # Exemplo de uso
+            tamanho_desejado = 16
+            senha_gerada = gerar_senha(tamanho_desejado)
+            print(f"Sua senha gerada é: {senha_gerada}")
+        </code></pre>
+        <hr>
+
+
+        <p><b>Teste</b> <strong>Teste</strong></p>
+        <p><i>Teste</i> <em>Teste</em></p>
+        <p><big>Teste</big> <small>Teste</small></p>
+        <p><strike>Teste</strike> <del>Teste</del></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+
+    </body>
+
+</html>
