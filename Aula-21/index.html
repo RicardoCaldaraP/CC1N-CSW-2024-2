@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links Musicais</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 20px;
+        }
+
+        /* Muda a cor ao passar o mouse */
+        h1:hover {
+            color: #FF5733;
+        }
+
+        h1:active {
+            color: aqua;
+        }
+
+        /* Muda a cor ao clicar */
+        a:visited {
+            color: #00ff37;
+        }
+
+        /* Adiciona o asterisco antes do link */
+        a:before {
+            content: '* ';
+            margin-right: 5px;
+        }
+
+        /* Adiciona o símbolo ♫ após o link */
+        a:after {
+            content: ' ♫';
+            margin-left: 5px;
+        }
+
+        @keyframes teste {
+            0% {
+                background-color: #007BFF;
+                height: 500px;
+                width: 800px;
+                rotate: 0;
+            }
+
+            25% {
+                background-color: #FF5733;
+                height: 800px;
+                width: 500px;
+                rotate: 60deg;
+            }
+
+            50% {
+                background-color: blueviolet;
+                height: 500px;
+                width: 800px;
+                rotate: 90deg;
+            }
+
+            75% {
+                background-color: darksalmon;
+                height: 800px;
+                width: 500px;
+                rotate: 180deg;
+            }
+
+            100% {
+                background-color: #007BFF;
+                height: 500px;
+                width: 800px;
+                rotate: 360deg;
+            }
+        }
+
+        @keyframes teste2 {
+            0% {
+                background-color: #007BFF;
+                rotate: 0;
+                
+            }
+
+            25% {
+                background-color: #FF5733;
+                rotate: 60deg;
+                margin-left: 80px;
+                margin-right: 0px;
+            }
+
+            50% {
+                background-color: blueviolet;
+                rotate: 30deg;
+                margin-right: 80px;
+                margin-left: 0px;
+            }
+
+            75% {
+                background-color: darksalmon;
+                rotate: 210deg;
+                margin-left: 1000px;
+                margin-right: 0;
+            }
+
+            100% {
+                background-color: #007BFF;
+                rotate: 360deg;
+
+            }
+        }
+
+        div#teste {
+            height: 500px;
+            width: 800px;
+            margin-top: auto;
+            margin-bottom: auto;
+            border-radius: 50px;
+            background-color: #007BFF;
+            animation-name: teste;
+            animation-duration: 3s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div#testee {
+            height: 400px;
+            width: 400px;
+            padding-top: 200px;
+        }
+
+        body {
+            animation-name: teste2;
+            animation-duration: 10s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div id="teste">
+        <div id="testee">
+            <h1>Links Musicais</h1>
+
+            <a href="https://open.spotify.com" target="_blank">Spotify</a><br>
+            <a href="https://www.youtube.com" target="_blank">YouTube</a><br>
+            <a href="https://music.amazon.com" target="_blank">Amazon Music</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
