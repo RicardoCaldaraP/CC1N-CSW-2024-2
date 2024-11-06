@@ -1,0 +1,47 @@
+header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+main div
+{
+    height: 100px;
+    width: 170px;
+    background-color: blue;
+    margin: 10px;
+    rotate: 0deg;
+    transition: width 0.3s ease, height 0.3s ease, rotate 0.5s ease;
+    border-radius: 10px;
+}
+
+main div:nth-child(3)
+{
+    background-color: red;
+    align-self: flex-end;
+}
+
+main div:hover
+{
+    height: 200px;
+    width: 340px;
+    rotate: 180deg;
+    background-color: blueviolet;
+}
+
+main div:active
+{
+    rotate: 720deg;
+    height: 500px;
+    width: 850px;
+}
